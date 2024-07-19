@@ -889,9 +889,14 @@ body {
   padding-right: 20px;
   background-image: url("../public/img/buy/buy_bg.png");
   background-size: 102%;
-  background-position: 50% -22px;
+  background-position: 50% -20px;
   position: relative;
   z-index: 1;
+}
+@media screen and (max-width: 1550px) {
+  .buy {
+    background-size: cover;
+  }
 }
 @media screen and (max-width: 768px) {
   .buy {
