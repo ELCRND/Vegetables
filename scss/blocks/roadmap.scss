@@ -1,0 +1,160 @@
+.roadmap {
+  padding-top: 156px;
+  padding-bottom: 405px;
+  background-image: url("../public/img/roadmap/roadmap_bg.png");
+  background-size: cover;
+  background-position: 50% -2px;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 33px;
+    padding-bottom: 27px;
+  }
+}
+
+.roadmap__container {
+  width: min(1628px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.roadmap__title {
+  margin-bottom: 74px;
+  font-weight: 700;
+  font-size: 96px;
+  text-align: center;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 26px;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+}
+
+.roadmap__phases {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 85px;
+
+  @media screen and (max-width: 1279px) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 36px 13px;
+    gap: 20px;
+    border-radius: 20px;
+    background: #fff2f2;
+  }
+}
+
+.phase {
+  width: 30%;
+  border-radius: 23px;
+  background-color: #fff;
+  position: relative;
+
+  @media screen and (max-width: 1279px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    background-color: #fef2f2;
+  }
+}
+
+.phase__text {
+  height: 291px;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 23px 23px 0 0;
+  background-color: #fef2f2;
+  font-weight: 700;
+  font-size: 32px;
+  color: #e59685;
+
+  @media screen and (max-width: 1279px) {
+    height: auto;
+    padding: 60px;
+  }
+  @media screen and (max-width: 768px) {
+    display: block;
+    padding: 0;
+    border-radius: 0;
+    font-size: 14px;
+  }
+
+  span {
+    max-width: 360px;
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+}
+
+.phase__status {
+  padding: 22px 80px;
+  font-weight: 700;
+  font-size: 32px;
+  color: #6bff8c;
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #6bff8c;
+      translate: 0 -50%;
+    }
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
+    &:after {
+      content: "";
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: #6bff8c;
+    }
+  }
+}
+
+.phase__status.not-ready {
+  color: #ff6b6b;
+  text-wrap: nowrap;
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+
+    &::after {
+      background-color: #ff6b6b;
+    }
+  }
+
+  span {
+    &::after {
+      background-color: #ff6b6b;
+    }
+  }
+}
