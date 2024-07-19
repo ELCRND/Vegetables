@@ -133,6 +133,10 @@ legend {
   --second-family: "Montserrat", sans-serif;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 html {
   scroll-behavior: smooth;
 }
