@@ -125,7 +125,7 @@ legend {
 }
 
 @font-face {
-  src: url("../public/fonts/centurygothic.ttf");
+  src: url("../public/fonts/CenturyGothic-Bold.ttf");
   font-family: "Century Gothic";
 }
 :root {
